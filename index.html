@@ -38,6 +38,11 @@
                 background: rgb(249, 249, 251);
             }
 
+            section {
+                display: block;
+                width: 100%;
+            }
+
             .center {
                 text-align: center;
                 display: block;
@@ -95,6 +100,7 @@
 
             #s3 img {
                 width: 363px;
+                max-width: 75%;
             }
 
             #s4 .row {
@@ -109,6 +115,8 @@
             #s5 p {
                 font-weight: 100;
                 color: #444;
+                max-width: 75%;
+                margin: auto;
             }
 
             footer {
@@ -133,7 +141,7 @@
                         </div>
                     </div>
                     <div class="col s12 m6 l6 full-height valign-wrapper">
-                        <div class="valign center-div wow fadeInDownBig">
+                        <div class="valign center-div wow fadeInUp">
                             <img id="screen1" src="./img/screen1.png">
                         </div>
                     </div>
@@ -182,12 +190,27 @@
             new WOW().init();
 
             var fixSectionHeight = function () {
-                var deviceHeight = $(window).height();
-                $('section#s1').height(deviceHeight);
-                $('section#s2').height(deviceHeight);
-                $('section#s3').height(deviceHeight);
-                $('section#s4').css({'marginTop' : deviceHeight*2/5, 'marginBottom' : deviceHeight*2/5});
-                $('section#s5').css({'marginBottom' : deviceHeight*2/5});
+                if($(window).width() >= 600) {
+                    var deviceHeight = $(window).height();
+                    $('section#s1').height(deviceHeight);
+                    $('section#s2').height(deviceHeight);
+                    $('section#s3').height(deviceHeight);
+                    $('section#s4').css({'marginTop' : deviceHeight*2/5, 'marginBottom' : deviceHeight*2/5});
+                    $('section#s5').css({'marginBottom' : deviceHeight*2/5});
+                } else {
+                    var deviceHeight = $(window).height();
+                    $('section#s1').css({
+                        paddingTop : 72,
+                        paddingBottom : 72
+                    });
+                    $("#s1 a img").css({
+                        marginBottom : 72
+                    })
+                    $('section#s2').css({'marginTop' : 32, 'marginBottom' : 48});
+                    $('section#s3').height(deviceHeight);
+                    $('section#s4').css({'marginTop' : deviceHeight*1/6, 'marginBottom' : deviceHeight*1/6});
+                    $('section#s5').css({'marginBottom' : deviceHeight*1/6});
+                }
             }
 
             fixSectionHeight()
