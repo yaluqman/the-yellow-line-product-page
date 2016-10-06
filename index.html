@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Yellow Line App</title>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="./bower_components/materialize/dist/css/materialize.min.css">
+        <script src="./bower_components/materialize/dist/js/materialize.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="./css/animate.css">
+        <script src="./bower_components/wow/dist/wow.min.js"></script>
+
+        <style>
+
+            body {
+                background: rgb(249, 249, 251);
+            }
+
+            .center {
+                text-align: center;
+                display: block;
+                width: 100%;
+            }
+
+            .center-div {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .italics {
+                font-style: italic;
+            }
+
+            #screen1 {
+                width: 293px !important;
+            }
+
+            #s1 img {
+                width: 72px;
+                display: block;
+                margin: auto;
+            }
+
+            #s1 h1 {
+                font-weight: 900;
+                color: #444;
+                font-size: 3.2em;
+                text-align: center;
+            }
+
+            #s1 h2 {
+                font-weight: 200;
+                color: #444;
+                font-size: 1.4em;
+                text-align: center;
+            }
+
+            #s1 a img {
+                width: 160px;
+                margin-top: 64px;
+            }
+
+            .full-height {
+                height: 100%;
+            }
+
+            #s2 p {
+                width: 65%;
+                margin: auto;
+                color: #666;
+                font-weight: 100;
+            }
+
+            #s3 img {
+                width: 363px;
+            }
+
+            #s4 .row {
+                width: 100%;
+                margin-top: 64px;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 2em;
+                color: #00BFA5;
+            }
+
+            #s5 p {
+                font-weight: 100;
+                color: #444;
+            }
+
+            footer {
+                display: block;
+                text-align: center;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <section id="s1">
+            <div class="container full-height">
+                <div class="row full-height">
+                    <div class="col s12 m6 l6 full-height valign-wrapper">
+                        <div class="valign center-div wow fadeIn">
+                            <img src="./img/app-icon.png">
+                            <h1>The Yellow Line</h1>
+                            <h2>record and review your weekly mood trends</h2>
+                            <a href="https://itunes.apple.com/in/app/the-yellow-line/id1161256496"><img src="./img/app-store-badge.png"></a>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l6 full-height valign-wrapper">
+                        <div class="valign center-div wow fadeInDownBig">
+                            <img id="screen1" src="./img/screen1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="s2">
+            <div class="full-height valign-wrapper">
+                <p class="valign center flow-text wow fadeIn">
+                    The app is designed to help you during your therapy or while recovering from trauma or depression, to record and analyse your mood patterns.
+                </p>
+            </div>
+        </section>
+
+        <section id="s3">
+            <div class="valign-wrapper full-height">
+                <img class="valign center-div wow fadeInUp" src="./img/screen2.png">
+            </div>
+        </section>
+
+        <section id="s4">
+            <div class="full-height valign-wrapper">
+                <div class="row valign">
+                    <div class="col s12 m6 l4 center wow fadeInUp">User Friendly</div>
+                    <div class="col s12 m6 l4 center wow fadeInUp">Cloud Sync</div>
+                    <div class="col s12 m6 l4 center wow fadeInUp">Safe and Secure</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="s5" class="valign-wrapper">
+            <div class="valign center flow-text italics wow fadeIn">
+                <p>Move forward in your journey to achieve a consistent high graph. We wish you all the best</p>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <p class="flow-text">&copy; 2016 Yahya Ayash Luqman | Made with <span class="red-text">&#9829;</span> in India</p>
+            </div>
+        </footer>
+
+        <script>
+
+            new WOW().init();
+
+            var fixSectionHeight = function () {
+                var deviceHeight = $(window).height();
+                $('section#s1').height(deviceHeight);
+                $('section#s2').height(deviceHeight);
+                $('section#s3').height(deviceHeight);
+                $('section#s4').css({'marginTop' : deviceHeight*2/5, 'marginBottom' : deviceHeight*2/5});
+                $('section#s5').css({'marginBottom' : deviceHeight*2/5});
+            }
+
+            fixSectionHeight()
+            $(window).resize(fixSectionHeight)
+
+        </script>
+
+    </body>
+</html>
